@@ -41,63 +41,63 @@ function loadSaved() {
 //Save text to local storage with each click - get value from textarea, then add key and save to local storage
 //writing a function for each save button
 $(".saveBtn9").click(function(){
-    alert("you clicked the 9am save button")
+    // alert("you clicked the 9am save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#nine").val();
     localStorage.setItem("9", textValue)
 })
 
 $(".saveBtn10").click(function(){
-    alert("you clicked the 10am save button")
+    // alert("you clicked the 10am save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#ten").val();
     localStorage.setItem("10", textValue)
 })
 
 $(".saveBtn11").click(function(){
-    alert("you clicked the 11am save button")
+    // alert("you clicked the 11am save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#eleven").val();
     localStorage.setItem("11", textValue)
 })
 
 $(".saveBtn12").click(function(){
-    alert("you clicked the 12pm save button")
+    // alert("you clicked the 12pm save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#twelve").val();
     localStorage.setItem("12", textValue)
 })
 
 $(".saveBtn13").click(function(){
-    alert("you clicked the 1pm save button")
+    // alert("you clicked the 1pm save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#thirteen").val();
     localStorage.setItem("13", textValue)
 })
 
 $(".saveBtn14").click(function(){
-    alert("you clicked the 2pm save button")
+    // alert("you clicked the 2pm save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#fourteen").val();
     localStorage.setItem("14", textValue)
 })
 
 $(".saveBtn15").click(function(){
-    alert("you clicked the 3pm save button")
+    // alert("you clicked the 3pm save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#fifteen").val();
     localStorage.setItem("15", textValue)
 })
 
 $(".saveBtn16").click(function(){
-    alert("you clicked the 4pm save button")
+    // alert("you clicked the 4pm save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#sixteen").val();
     localStorage.setItem("16", textValue)
 })
 
 $(".saveBtn17").click(function(){
-    alert("you clicked the 5pm save button")
+    // alert("you clicked the 5pm save button")
     // var hourKey = $(".hour9").val(); don't need because this is hardcoded to 9
     var textValue = $("#seventeen").val();
     localStorage.setItem("17", textValue)
