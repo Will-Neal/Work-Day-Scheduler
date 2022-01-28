@@ -29,18 +29,18 @@ function changeBoxColor() {
     $("input").each(function () {
         // console.log(this)
         // console.log(this.dataset.timeslot)
-        var hour = 10
+        var hour = (moment().format("H"))
+        // console.log(hour)
         calendarHour = this.dataset.timeslot;
         // console.log(calendarHour)
-        if (calendarHour == hour) {
+        if (calendarHour < hour) {
             // console.log(calendarHour)
             // console.log(hour)
-            $(this).addClass("present");
-        }   else if (calendarHour < hour) {
+            $(this).addClass("past")
+        }   else if (calendarHour == hour) {
             console.log(calendarHour)
             console.log(hour)
-            $(this).removeClass("present")
-            $(this).addClass("past")
+            $(this).addClass("present");
         }   else {
            $(this).addClass("future")
         }
