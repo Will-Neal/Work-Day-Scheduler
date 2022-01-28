@@ -69,3 +69,14 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.clearContainer {
+  text-align: center;
+}
+
+#clearBtn {
+  align-self: center;
+  text-align: center;
+  margin:30px;
+  padding: 15px;
+}

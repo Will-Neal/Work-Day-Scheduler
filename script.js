@@ -4,6 +4,8 @@
 //Moment based time that keeps current time
 $(document).ready(function(){
     updateTime()
+    loadSaved()
+    changeBoxColor()
     // console.log("the ready function is running")
 })
 
@@ -32,7 +34,7 @@ function loadSaved() {
     $("#seventeen").text(localStorage.getItem("17"))
 }
 
-loadSaved()
+// loadSaved()
 
 
 //Add event listener to each button 
@@ -101,6 +103,12 @@ $(".saveBtn17").click(function(){
     localStorage.setItem("17", textValue)
 })
 
+//Button to clear localStorage
+$("#clearBtn").click(function(){
+    localStorage.clear()
+    location.reload()
+})
+
 
 //Change box color
 
@@ -111,7 +119,7 @@ function changeBoxColor() {
     $("textarea").each(function () {
         // console.log(this)
         // console.log(this.dataset.timeslot)
-        var hourStr = (moment().add(3, "hours").format("H")) // use add function to test different times, 0 is the present
+        var hourStr = (moment().add(0, "hours").format("H")) // use add function to test different times, 0 is the present
         var hour = Number(hourStr)
         // console.log(hour)
         // var hour = 12
@@ -135,4 +143,4 @@ function changeBoxColor() {
     })
 }
 
-changeBoxColor()
+// changeBoxColor()
