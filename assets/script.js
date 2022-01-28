@@ -132,6 +132,7 @@ function changeBoxColor() {
             // console.log(calendarHour)
             // console.log(hour)
             $(this).addClass("past")
+            $(this).css("text-decoration", "line-through")
             $(this).removeClass("future")
         }   else if (calendarHour === hour) {
             // console.log(calendarHour)
