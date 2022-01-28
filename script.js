@@ -14,6 +14,7 @@ function updateTime() {
 
 var timer = setInterval(updateTime, 1000);
 
+updateTime()
 
 
 //each to iterate and this to not use DOM again and again
@@ -21,12 +22,7 @@ var timer = setInterval(updateTime, 1000);
 
 //Add event listener to each button 
 //Save text to local storage with each click - get value from textarea, then add key and save to local storage
-// $(".saveBtn").click(function(){
-//     alert("you clicked a save button")
-//     console.log($(this))
 
-
-// })
 //writing a function for each save button
 $(".saveBtn9").click(function(){
     alert("you clicked the 9am save button")
@@ -101,19 +97,23 @@ function changeBoxColor() {
     $("textarea").each(function () {
         // console.log(this)
         // console.log(this.dataset.timeslot)
-        var hour = (moment().format("H"))
-        // var hour = 11
-        console.log("hour " + hour)
-        calendarHour = this.dataset.timeslot;
-        console.log("calendarHour "+ calendarHour)
+        var hourStr = (moment().add(0, "hours").format("H")) // use add function to test different times, 0 is the present
+        var hour = Number(hourStr)
+        // console.log(hour)
+        // var hour = 12
+        console.log("hour " + typeof(hour))
+        calendarHourStr = this.dataset.timeslot;
+        calendarHour = Number(calendarHourStr)
+        // calenderHourString = calendarHour.toString()
+        console.log("calendarHour "+ typeof(calendarHour))
         if (calendarHour < hour) {
             // console.log(calendarHour)
             // console.log(hour)
             $(this).addClass("past")
             $(this).removeClass("future")
         }   else if (calendarHour == hour) {
-            console.log(calendarHour)
-            console.log(hour)
+            // console.log(calendarHour)
+            // console.log(hour)
             $(this).addClass("present");
         }   else {
            $(this).addClass("future")
