@@ -14,4 +14,37 @@ function updateTime() {
 
 var timer = setInterval(updateTime, 1000);
 
-console.log(moment().format("MMMM"))
+
+
+//each to iterate and this to not use DOM againS
+
+//Save text to local storage
+
+//Change box color
+
+function changeBoxColor() {
+// var hour = (moment().format("H"));
+// var hour = 9    
+// console.log(hour)    
+    $("input").each(function () {
+        // console.log(this)
+        // console.log(this.dataset.timeslot)
+        var hour = 10
+        calendarHour = this.dataset.timeslot;
+        // console.log(calendarHour)
+        if (calendarHour == hour) {
+            // console.log(calendarHour)
+            // console.log(hour)
+            $(this).addClass("present");
+        }   else if (calendarHour < hour) {
+            console.log(calendarHour)
+            console.log(hour)
+            $(this).removeClass("present")
+            $(this).addClass("past")
+        }   else {
+           $(this).addClass("future")
+        }
+    })
+}
+
+changeBoxColor()
