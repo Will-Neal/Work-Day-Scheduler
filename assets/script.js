@@ -6,7 +6,7 @@ $(document).ready(function(){
 })
 
 function updateTime() {
-    $("#currTime").text(moment().add(-4, "hours").format('MMMM Do YYYY, h:mm:ss a'))
+    $("#currTime").text(moment().format('MMMM Do YYYY, h:mm:ss a'))
 };
 
 var timer = setInterval(updateTime, 1000);
@@ -88,7 +88,7 @@ $("#clearBtn").click(function(){
 
 function changeBoxColor() {  
     $("textarea").each(function () {
-        var hourStr = (moment().add(-4, "hours").format("H")) // use add function to test different times, 0 is the present
+        var hourStr = (moment().format("H")) // use add function to test different times, 0 is the present
         var hour = Number(hourStr)
         calendarHourStr = this.dataset.timeslot;
         calendarHour = Number(calendarHourStr)
