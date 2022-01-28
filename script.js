@@ -26,17 +26,19 @@ function changeBoxColor() {
 // var hour = (moment().format("H"));
 // var hour = 9    
 // console.log(hour)    
-    $("input").each(function () {
+    $("textarea").each(function () {
         // console.log(this)
         // console.log(this.dataset.timeslot)
         var hour = (moment().format("H"))
-        // console.log(hour)
+        // var hour = 11
+        console.log("hour " + hour)
         calendarHour = this.dataset.timeslot;
-        // console.log(calendarHour)
+        console.log("calendarHour "+ calendarHour)
         if (calendarHour < hour) {
             // console.log(calendarHour)
             // console.log(hour)
             $(this).addClass("past")
+            $(this).removeClass("future")
         }   else if (calendarHour == hour) {
             console.log(calendarHour)
             console.log(hour)
