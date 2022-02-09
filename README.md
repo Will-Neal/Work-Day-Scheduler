@@ -32,8 +32,29 @@ Under the hood is some useful functionality. The timer serves double duty and al
 
 <br>
 
+## Technologies
+<ul>
+ <li>JavaScript</li>
+ <li>JQuery</li>
+ <li>Bootstrap 4</li>
+ <li>HTML</li>
+ <li>CSS</li>
+ <li>FontAwesome</li>
+ <li>Google Fonts</li>
+</ul>
+
+<br>
+
 ## Screenshots 
 
 <br>
 
 ![application-screenshot](https://github.com/Will-Neal/Work-Day-Scheduler/blob/main/assets/images/applicationScreenShot.jpg?raw=true)
+
+## License
+
+<img src="https://img.shields.io/badge/license-MIT-red">
+  
+This project is licensed under the MIT License.
+
+For more information on this license, please visit [their website](https://www.mit.edu/~amini/LICENSE.md).
